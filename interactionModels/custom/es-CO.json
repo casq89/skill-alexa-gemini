@@ -14,7 +14,7 @@
           "samples": [
             "dime  {query}",
             "pregunta {query}",
-            "hablar con gemini {query}"
+            "hablar con amigo {query}"
           ]
         },
         { "name": "AMAZON.HelpIntent", "samples": [] },

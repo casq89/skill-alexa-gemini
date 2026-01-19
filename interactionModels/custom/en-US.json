@@ -15,7 +15,7 @@
             "ask {query}",
             "tell me {query}",
             "question {query}",
-            "talk to gemini {query}"
+            "talk to buddy {query}"
           ]
         },
         { "name": "AMAZON.HelpIntent", "samples": [] },
