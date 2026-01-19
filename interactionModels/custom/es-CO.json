@@ -1,38 +1,27 @@
 {
   "interactionModel": {
     "languageModel": {
+      "invocationName": "smart gemini",
       "intents": [
         {
-          "name": "AMAZON.CancelIntent",
-          "samples": []
-        },
-        {
-          "name": "AMAZON.HelpIntent",
-          "samples": []
-        },
-        {
-          "name": "AMAZON.StopIntent",
-          "samples": []
-        },
-        {
-          "name": "AMAZON.NavigateHomeIntent",
-          "samples": []
-        },
-        {
+          "name": "ChatIntent",
           "slots": [
             {
               "name": "query",
-              "type": "AMAZON.Person"
+              "type": "AMAZON.SearchQuery"
             }
           ],
-          "name": "ChatIntent",
           "samples": [
-            "{query}"
+            "dime  {query}",
+            "pregunta {query}",
+            "hablar con gemini {query}"
           ]
-        }
-      ],
-      "types": [],
-      "invocationName": "Genimi inteligente"
+        },
+        { "name": "AMAZON.HelpIntent", "samples": [] },
+        { "name": "AMAZON.CancelIntent", "samples": [] },
+        { "name": "AMAZON.StopIntent", "samples": [] },
+        { "name": "AMAZON.NavigateHomeIntent", "samples": [] }
+      ]
     }
   }
 }

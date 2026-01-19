@@ -1,38 +1,28 @@
 {
   "interactionModel": {
     "languageModel": {
+      "invocationName": "smart gemini",
       "intents": [
         {
-          "name": "AMAZON.CancelIntent",
-          "samples": []
-        },
-        {
-          "name": "AMAZON.HelpIntent",
-          "samples": []
-        },
-        {
-          "name": "AMAZON.StopIntent",
-          "samples": []
-        },
-        {
-          "name": "AMAZON.NavigateHomeIntent",
-          "samples": []
-        },
-        {
+          "name": "ChatIntent",
           "slots": [
             {
               "name": "query",
-              "type": "AMAZON.Person"
+              "type": "AMAZON.SearchQuery"
             }
           ],
-          "name": "ChatIntent",
           "samples": [
-            "{query}"
+            "ask {query}",
+            "tell me {query}",
+            "question {query}",
+            "talk to gemini {query}"
           ]
-        }
-      ],
-      "types": [],
-      "invocationName": "smart gemini"
+        },
+        { "name": "AMAZON.HelpIntent", "samples": [] },
+        { "name": "AMAZON.CancelIntent", "samples": [] },
+        { "name": "AMAZON.StopIntent", "samples": [] },
+        { "name": "AMAZON.NavigateHomeIntent", "samples": [] }
+      ]
     }
   }
 }
